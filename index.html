@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kalkulator BMI</title>
+<title>Weight Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -12,7 +12,7 @@
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
   --bg:#eef3f4; --card:#ffffff; --ink:#12303a; --muted:#5b747c; --line:#cfdcdf; --btn:#12303a; --btn-ink:#ffffff;
-  --c-under:#3b82c4; --c-normal:#2f9e6e; --c-over:#e0a12b; --c-obese:#d1495b;
+  --c-under:#8ba6ff; --c-normal:#2f9e6e; --c-over:#fc9432; --c-obese:#ff546b;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -52,7 +52,7 @@ button:focus-visible{outline:3px solid var(--c-normal);outline-offset:2px}
 </head>
 <body>
 <main>
-  <h1>Kalkulator BMI</h1>
+  <h1> Weight Tracker</h1>
   <p class="sub">Masukkan berat dan tinggi badanmu.</p>
 
   <div class="row">
@@ -65,7 +65,7 @@ button:focus-visible{outline:3px solid var(--c-normal);outline-offset:2px}
   </div>
 
   <p id="error" role="alert"></p>
-  <button id="hitung" type="button">Hitung BMI</button>
+  <button id="hitung" type="button">Cek hasil</button>
 
   <section id="result" aria-live="polite">
     <div class="value" id="nilai"></div>
